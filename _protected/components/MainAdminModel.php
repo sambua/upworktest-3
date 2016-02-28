@@ -9,6 +9,7 @@
 namespace app\components;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 class MainAdminModel extends \app\components\AppActiveRecord{
   public function behaviors(){
@@ -28,11 +29,11 @@ class MainAdminModel extends \app\components\AppActiveRecord{
     ];
   }
 
-  public function getCreateName(){
+  public function getCreatorName(){
     return $this->creator ? $this->creator->username : '- no user -';
   }
 
-  public function getUpdateName(){
+  public function getUpdaterName(){
     return $this->updater ? $this->updater->username : '- no user -';
   }
 }

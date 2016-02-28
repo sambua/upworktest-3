@@ -32,7 +32,7 @@ class AppController extends Controller{
         'class' => AccessControl::className(),
         'rules' => [
           [
-            'controllers' => ['user', 'manager'],
+            'controllers' => ['user', 'manager', 'hotel', 'amenity'],
             'actions' => ['index', 'view', 'create', 'update', 'admin'],
             'allow' => true,
             'roles' => ['admin'],
@@ -43,8 +43,8 @@ class AppController extends Controller{
             'roles' => ['admin'],
           ],
           [
-            'controllers' => ['hotel'],
-            'actions' => ['rate'],
+            'controllers' => ['site'],
+            'actions' => ['hotels'],
             'allow' => true,
             'roles' => ['member'],
           ],

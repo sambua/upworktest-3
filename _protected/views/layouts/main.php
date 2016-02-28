@@ -46,6 +46,7 @@ AppAsset::register($this);
     // display Users to admin+ roles
     if (Yii::$app->user->can('admin')){
         $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
+        $menuItems[] = ['label' => Yii::t('app', 'Control Panel'), 'url' => ['/manager']];
     }
     
     // display Logout to logged in users
