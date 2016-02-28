@@ -16,8 +16,7 @@ use Yii;
  * 
  * @since 2.0
  */
-class AppAsset extends AssetBundle
-{
+class AppAsset extends AssetBundle{
     public $basePath = '@webroot';
     public $baseUrl = '@themes';
 
