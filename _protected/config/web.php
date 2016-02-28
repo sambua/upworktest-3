@@ -36,6 +36,7 @@ $config = [
           'enablePrettyUrl' => true,
           'showScriptName' => false,
           'rules' => [
+            'manager' => 'manager/index',
             '<alias:\w+>' => 'site/<alias>',
           ],
         ],

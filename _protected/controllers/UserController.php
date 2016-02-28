@@ -10,8 +10,7 @@ use Yii;
 /**
  * UserController implements the CRUD actions for User model.
  */
-class UserController extends AppController
-{
+class UserController extends \app\components\AppController{
     /**
      * How many users we want to display per page.
      * @var int

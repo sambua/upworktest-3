@@ -6,4 +6,5 @@ return [
   'username' => 'root',
   'password' => 'mysql',
   'charset' => 'utf8',
+  'tablePrefix' => 'ut_'
 ];

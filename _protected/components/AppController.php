@@ -32,7 +32,7 @@ class AppController extends Controller{
         'class' => AccessControl::className(),
         'rules' => [
           [
-            'controllers' => ['user', 'article'],
+            'controllers' => ['user', 'manager'],
             'actions' => ['index', 'view', 'create', 'update', 'admin'],
             'allow' => true,
             'roles' => ['admin'],
@@ -66,44 +66,5 @@ class AppController extends Controller{
       ], // verbs
     ]; // return
   } // behaviors
-
-
-  public function actionPage($slug){
-    $this->layout = "//main";
-
-    $model = \app\models\Page::find()->where(['url_name'=>$slug])->active()->one();
-
-    return $this->render('view', [
-      'model'=>$model,
-      'file_path' => Yii::getAlias('@uploadsUrl')."/page/",
-    ]);
-  }
-
-
-  /**
-   * $folder name has  to be the same name as Model name
-   * @param $id
-   * @param string $folder
-   * @return mixed
-   */
-  public function actionDeleteImage($id, $folder = 'page'){
-    $lang_model_name_class = "\\app\\models\\".ucfirst($folder);
-
-    if(class_exists($lang_model_name_class)) {
-      $model = $lang_model_name_class::findOne($id);
-    } else{
-      $model = \app\models\Page::findOne($id);
-    }
-
-    $filename = Yii::getAlias('@uploads')."/$folder/".$model->image_url;
-    $thumb_name = Yii::getAlias('@uploads')."/$folder/thumb/".$model->image_url;
-    if(is_file($filename)) unlink ($filename);
-    if(is_file($thumb_name)) unlink ($thumb_name);
-    $model->image_url = Null;
-    $model->save();
-
-    #return $this->goBack();
-    return $this->redirect(Yii::$app->request->referrer);
-  }
 
 } // AppController

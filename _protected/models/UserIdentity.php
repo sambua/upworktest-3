@@ -23,15 +23,13 @@ use Yii;
  * @property integer $created_at
  * @property integer $updated_at
  */
-class UserIdentity extends ActiveRecord implements IdentityInterface
-{
+class UserIdentity extends ActiveRecord implements IdentityInterface{
     /**
      * Declares the name of the database table associated with this AR class.
      *
      * @return string
      */
-    public static function tableName()
-    {
+    public static function tableName(){
         return '{{%user}}';
     }
 

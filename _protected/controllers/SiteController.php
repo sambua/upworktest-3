@@ -160,6 +160,9 @@ class SiteController extends Controller{
         }
 
         // login was successful, let user go wherever he previously wanted
+        if(Yii::$app->user->can('admin')){
+          return $this->redirect('/manager');
+        }
         return $this->goBack();
     }
 
