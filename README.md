@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 yii2-basic-template
 ===================
 
@@ -133,3 +134,7 @@ Choosing presets:
 By default normal preset is used for signup and user create/update forms. For password reset we are using 'simple' preset. If you want to customize which presets is used, see SignupForm model, User model and ResetPasswordForm model. You will see rules declared for using strong passwords. Presets are located in ```vendor/kartik-v/yii2-password/presets.php```. You can chose some other preset declared in presets.php, or create new ones.
 
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+=======
+# upworktest-3
+Upwork test job
+>>>>>>> 0e42c89d7a94329977de5026316794ab4349550b
