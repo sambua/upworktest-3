@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.9)
 # Database: uptest-3
-# Generation Time: 2016-02-28 13:35:44 +0000
+# Generation Time: 2016-02-28 18:52:22 +0000
 # ************************************************************
 
 
@@ -20,36 +20,89 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table auth_assignment
+# Dump of table hotel_media_files
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `auth_assignment`;
+DROP TABLE IF EXISTS `hotel_media_files`;
 
-CREATE TABLE `auth_assignment` (
+CREATE TABLE `hotel_media_files` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `hotel_id` int(11) unsigned NOT NULL,
+  `file_name` varchar(1024) NOT NULL DEFAULT '',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `hotel_id` (`hotel_id`),
+  CONSTRAINT `hotel_media_files_ibfk_1` FOREIGN KEY (`hotel_id`) REFERENCES `ut_hotels` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+# Dump of table ut_amenities
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ut_amenities`;
+
+CREATE TABLE `ut_amenities` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `status` tinyint(1) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `description` text,
+  `creator_id` int(11) DEFAULT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updater_id` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `creator_id` (`creator_id`),
+  KEY `updater_id` (`updater_id`),
+  CONSTRAINT `ut_amenities_ibfk_1` FOREIGN KEY (`creator_id`) REFERENCES `ut_user` (`id`),
+  CONSTRAINT `ut_amenities_ibfk_2` FOREIGN KEY (`updater_id`) REFERENCES `ut_user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `ut_amenities` WRITE;
+/*!40000 ALTER TABLE `ut_amenities` DISABLE KEYS */;
+
+INSERT INTO `ut_amenities` (`id`, `status`, `title`, `description`, `creator_id`, `created_at`, `updater_id`, `updated_at`)
+VALUES
+	(1,1,'Have beach','Beach of the hotel is very good',1,1456682920,1,1456682920),
+	(2,1,'All inclusive','',1,1456683160,1,1456683160),
+	(3,1,'Conditioner','',1,1456683219,1,1456683219),
+	(4,1,'Have lux room','',1,1456683235,1,1456683235);
+
+/*!40000 ALTER TABLE `ut_amenities` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table ut_auth_assignment
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ut_auth_assignment`;
+
+CREATE TABLE `ut_auth_assignment` (
   `item_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `user_id` int(11) NOT NULL,
   `created_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`item_name`,`user_id`),
-  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `ut_auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `ut_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `auth_assignment` WRITE;
-/*!40000 ALTER TABLE `auth_assignment` DISABLE KEYS */;
+LOCK TABLES `ut_auth_assignment` WRITE;
+/*!40000 ALTER TABLE `ut_auth_assignment` DISABLE KEYS */;
 
-INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`)
+INSERT INTO `ut_auth_assignment` (`item_name`, `user_id`, `created_at`)
 VALUES
-	('theCreator',1,1456666113);
+	('admin',1,1456666113),
+	('member',2,1456666113);
 
-/*!40000 ALTER TABLE `auth_assignment` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_auth_assignment` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table auth_item
+# Dump of table ut_auth_item
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `auth_item`;
+DROP TABLE IF EXISTS `ut_auth_item`;
 
-CREATE TABLE `auth_item` (
+CREATE TABLE `ut_auth_item` (
   `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(11) NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
@@ -60,62 +113,52 @@ CREATE TABLE `auth_item` (
   PRIMARY KEY (`name`),
   KEY `rule_name` (`rule_name`),
   KEY `idx-auth_item-type` (`type`),
-  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+  CONSTRAINT `ut_auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `ut_auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `auth_item` WRITE;
-/*!40000 ALTER TABLE `auth_item` DISABLE KEYS */;
+LOCK TABLES `ut_auth_item` WRITE;
+/*!40000 ALTER TABLE `ut_auth_item` DISABLE KEYS */;
 
-INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`)
+INSERT INTO `ut_auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`)
 VALUES
 	('admin',1,'Administrator of this application',NULL,NULL,1456665244,1456665244),
-	('employee',1,'Employee of this site/company who has lower rights than admin',NULL,NULL,1456665244,1456665244),
-	('manageUsers',2,'Allows admin+ roles to manage users',NULL,NULL,1456665244,1456665244),
-	('member',1,'Authenticated user, equal to \"@\"',NULL,NULL,1456665244,1456665244),
-	('premium',1,'Premium users. Authenticated users with extra powers',NULL,NULL,1456665244,1456665244),
-	('theCreator',1,'You!',NULL,NULL,1456665244,1456665244),
-	('usePremiumContent',2,'Allows premium+ roles to use premium content',NULL,NULL,1456665244,1456665244);
+	('member',1,'Authenticated user, equal to \"@\"',NULL,NULL,1456665244,1456665244);
 
-/*!40000 ALTER TABLE `auth_item` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_auth_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table auth_item_child
+# Dump of table ut_auth_item_child
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `auth_item_child`;
+DROP TABLE IF EXISTS `ut_auth_item_child`;
 
-CREATE TABLE `auth_item_child` (
+CREATE TABLE `ut_auth_item_child` (
   `parent` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `child` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`parent`,`child`),
   KEY `child` (`child`),
-  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `ut_auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `ut_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `ut_auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `ut_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `auth_item_child` WRITE;
-/*!40000 ALTER TABLE `auth_item_child` DISABLE KEYS */;
+LOCK TABLES `ut_auth_item_child` WRITE;
+/*!40000 ALTER TABLE `ut_auth_item_child` DISABLE KEYS */;
 
-INSERT INTO `auth_item_child` (`parent`, `child`)
+INSERT INTO `ut_auth_item_child` (`parent`, `child`)
 VALUES
-	('theCreator','admin'),
-	('admin','employee'),
-	('admin','manageUsers'),
-	('premium','member'),
-	('employee','premium'),
-	('premium','usePremiumContent');
+	('admin','member');
 
-/*!40000 ALTER TABLE `auth_item_child` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_auth_item_child` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table auth_rule
+# Dump of table ut_auth_rule
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `auth_rule`;
+DROP TABLE IF EXISTS `ut_auth_rule`;
 
-CREATE TABLE `auth_rule` (
+CREATE TABLE `ut_auth_rule` (
   `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `data` text COLLATE utf8_unicode_ci,
   `created_at` int(11) DEFAULT NULL,
@@ -123,47 +166,125 @@ CREATE TABLE `auth_rule` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `auth_rule` WRITE;
-/*!40000 ALTER TABLE `auth_rule` DISABLE KEYS */;
+LOCK TABLES `ut_auth_rule` WRITE;
+/*!40000 ALTER TABLE `ut_auth_rule` DISABLE KEYS */;
 
-INSERT INTO `auth_rule` (`name`, `data`, `created_at`, `updated_at`)
+INSERT INTO `ut_auth_rule` (`name`, `data`, `created_at`, `updated_at`)
 VALUES
 	('isAuthor','O:25:\"app\\rbac\\rules\\AuthorRule\":3:{s:4:\"name\";s:8:\"isAuthor\";s:9:\"createdAt\";i:1456665244;s:9:\"updatedAt\";i:1456665244;}',1456665244,1456665244);
 
-/*!40000 ALTER TABLE `auth_rule` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_auth_rule` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table migration
+# Dump of table ut_hotel_amenities
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `migration`;
+DROP TABLE IF EXISTS `ut_hotel_amenities`;
 
-CREATE TABLE `migration` (
+CREATE TABLE `ut_hotel_amenities` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `hotel_id` int(11) unsigned DEFAULT NULL,
+  `amenity_id` int(11) unsigned DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `hotel_id` (`hotel_id`),
+  KEY `amenity_id` (`amenity_id`),
+  CONSTRAINT `ut_hotel_amenities_ibfk_2` FOREIGN KEY (`amenity_id`) REFERENCES `ut_amenities` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `ut_hotel_amenities` WRITE;
+/*!40000 ALTER TABLE `ut_hotel_amenities` DISABLE KEYS */;
+
+INSERT INTO `ut_hotel_amenities` (`id`, `hotel_id`, `amenity_id`, `created_at`)
+VALUES
+	(7,2,1,'2016-02-28 22:39:16'),
+	(8,2,2,'2016-02-28 22:39:16'),
+	(9,2,3,'2016-02-28 22:39:16'),
+	(18,3,1,'2016-02-28 22:40:15'),
+	(19,3,3,'2016-02-28 22:40:15'),
+	(20,3,4,'2016-02-28 22:40:15'),
+	(21,4,3,'2016-02-28 22:40:53'),
+	(22,4,4,'2016-02-28 22:40:53'),
+	(23,5,2,'2016-02-28 22:41:16'),
+	(24,5,4,'2016-02-28 22:41:16'),
+	(25,6,1,'2016-02-28 22:41:47'),
+	(26,6,3,'2016-02-28 22:41:47'),
+	(27,7,1,'2016-02-28 22:42:10'),
+	(28,7,2,'2016-02-28 22:42:10'),
+	(29,7,4,'2016-02-28 22:42:10');
+
+/*!40000 ALTER TABLE `ut_hotel_amenities` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table ut_hotels
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ut_hotels`;
+
+CREATE TABLE `ut_hotels` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `description` text,
+  `creator_id` int(11) DEFAULT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updater_id` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `creator_id` (`creator_id`),
+  KEY `updater_id` (`updater_id`),
+  CONSTRAINT `ut_hotels_ibfk_1` FOREIGN KEY (`creator_id`) REFERENCES `ut_user` (`id`),
+  CONSTRAINT `ut_hotels_ibfk_2` FOREIGN KEY (`updater_id`) REFERENCES `ut_user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `ut_hotels` WRITE;
+/*!40000 ALTER TABLE `ut_hotels` DISABLE KEYS */;
+
+INSERT INTO `ut_hotels` (`id`, `status`, `title`, `description`, `creator_id`, `created_at`, `updater_id`, `updated_at`)
+VALUES
+	(2,1,'Luxury Otel sun beach','Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.\r\nContra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.\r\nVivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.\r\nGallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.',1,1456684756,1,1456684756),
+	(3,1,'Quam temere in vitiis, legem sancimus haerentia.','Cum ceteris in veneratione tui montes, nascetur mus. Gallia est omnis divisa in partes tres, quarum. Curabitur blandit tempus ardua ridiculus sed magna.\r\nPaullum deliquit, ponderibus modulisque suis ratio utitur. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Excepteur sint obcaecat cupiditat non proident culpa. Prima luce, cum quibus mons aliud consensu ab eo. Quisque placerat facilisis egestas cillum dolore. Cum sociis natoque penatibus et magnis dis parturient.\r\nA communi observantia non est recedendum. Quae vero auctorem tractata ab fiducia dicuntur. Ullamco laboris nisi ut aliquid ex ea commodi consequat.',1,1456684787,1,1456684815),
+	(4,1,'Nihil hic munitissimus habendi','Sed haec quis possit intrepidus aestimare tellus. Donec sed odio operae, eu vulputate felis rhoncus. Quo usque tandem abutere, Catilina, patientia nostra? Ambitioni dedisse scripsisse iudicaretur.\r\nAb illo tempore, ab est sed immemorabili. A communi observantia non est recedendum. Hi omnes lingua, institutis, legibus inter se differunt. Quam temere in vitiis, legem sancimus haerentia.\r\nCum ceteris in veneratione tui montes, nascetur mus. Plura mihi bona sunt, inclinet, amari petere vellent. Me non paenitet nullum festiviorem excogitasse ad hoc. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Unam incolunt Belgae, aliam Aquitani, tertiam. Etiam habebis sem dicantur magna mollis euismod.',1,1456684853,1,1456684853),
+	(5,1,'Ab illo tempore, ab est.','Etiam habebis sem dicantur magna mollis euismod. Quam temere in vitiis, legem sancimus haerentia. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.\r\nGallia est omnis divisa in partes tres, quarum. Non equidem invideo, miror magis posuere velit aliquet. Paullum deliquit, ponderibus modulisque suis ratio utitur. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Contra legem facit qui id facit quod lex prohibet. Phasellus laoreet lorem vel dolor tempus vehicula.\r\nFictum, deserunt mollit anim laborum astutumque! Donec sed odio operae, eu vulputate felis rhoncus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Integer legentibus erat a ante historiarum dapibus. Pellentesque habitant morbi tristique senectus et netus. Ab illo tempore, ab est sed immemorabili.\r\nQui ipsorum lingua Celtae, nostra Galli appellantur. Quisque placerat facilisis egestas cillum dolore. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Plura mihi bona sunt, inclinet, amari petere vellent.',1,1456684876,1,1456684876),
+	(6,1,'Fabio vel iudice vincam.','Qui ipsorum lingua Celtae, nostra Galli appellantur. Integer legentibus erat a ante historiarum dapibus. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Quam diu etiam furor iste tuus nos eludet?\r\nAmbitioni dedisse scripsisse iudicaretur. Ab illo tempore, ab est sed immemorabili. Pellentesque habitant morbi tristique senectus et netus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Mercedem aut nummos unde unde extricat, amaras. Curabitur est gravida et libero vitae dictum.\r\nHi omnes lingua, institutis, legibus inter se differunt. Fictum, deserunt mollit anim laborum astutumque! Quo usque tandem abutere, Catilina, patientia nostra?',1,1456684907,1,1456684907),
+	(7,1,'Morbi odio eros.','Integer legentibus erat a ante historiarum dapibus. Me non paenitet nullum festiviorem excogitasse ad hoc. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.\r\nQuae vero auctorem tractata ab fiducia dicuntur. Ut enim ad minim veniam, quis nostrud exercitation. Paullum deliquit, ponderibus modulisque suis ratio utitur. Non equidem invideo, miror magis posuere velit aliquet.\r\nAb illo tempore, ab est sed immemorabili. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Nec dubitamus multa iter quae et nos invenerat. Fabio vel iudice vincam, sunt in culpa qui officia.',1,1456684930,1,1456684930);
+
+/*!40000 ALTER TABLE `ut_hotels` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table ut_migration
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ut_migration`;
+
+CREATE TABLE `ut_migration` (
   `version` varchar(180) NOT NULL,
   `apply_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `migration` WRITE;
-/*!40000 ALTER TABLE `migration` DISABLE KEYS */;
+LOCK TABLES `ut_migration` WRITE;
+/*!40000 ALTER TABLE `ut_migration` DISABLE KEYS */;
 
-INSERT INTO `migration` (`version`, `apply_time`)
+INSERT INTO `ut_migration` (`version`, `apply_time`)
 VALUES
 	('m000000_000000_base',1456665235),
 	('m141022_115823_create_user_table',1456665237),
 	('m141022_115912_create_rbac_tables',1456665237);
 
-/*!40000 ALTER TABLE `migration` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_migration` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table user
+# Dump of table ut_user
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `ut_user`;
 
-CREATE TABLE `user` (
+CREATE TABLE `ut_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -181,15 +302,15 @@ CREATE TABLE `user` (
   UNIQUE KEY `account_activation_token` (`account_activation_token`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+LOCK TABLES `ut_user` WRITE;
+/*!40000 ALTER TABLE `ut_user` DISABLE KEYS */;
 
-INSERT INTO `user` (`id`, `username`, `email`, `password_hash`, `status`, `auth_key`, `password_reset_token`, `account_activation_token`, `created_at`, `updated_at`)
+INSERT INTO `ut_user` (`id`, `username`, `email`, `password_hash`, `status`, `auth_key`, `password_reset_token`, `account_activation_token`, `created_at`, `updated_at`)
 VALUES
 	(1,'sambua','aliyev.resad@gmail.com','$2y$13$9IMadS2DjfsZwENqb13yr.ghQpDQZyP.T1tsWiZaStoEY6sn3M3Ou',10,'EGnyqopU2AwWTtFFjEuk57bYCZLZGkko',NULL,NULL,1456666113,1456666113),
 	(2,'sambua1','az_rashad@yahoo.com','$2y$13$SZpvb/VgQiGN/lD.W38TVuAbK/H4KaZHcHDXtx7aHguxop7ETqMbS',10,'NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo',NULL,NULL,1456666428,1456666482);
 
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ut_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

@@ -100,6 +100,11 @@ $config = [
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,
+    'aliases' => [
+      '@appRootPath' => realpath(dirname(__FILE__).'/../../'),
+      '@uploads' => '@appRootPath/uploads',
+      '@uploadsUrl' => 'http://uptest.dev/uploads',
+    ],
 ];
 
 if (YII_ENV_DEV) {

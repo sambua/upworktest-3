@@ -33,7 +33,7 @@ class AppController extends Controller{
         'rules' => [
           [
             'controllers' => ['user', 'manager', 'hotel', 'amenity'],
-            'actions' => ['index', 'view', 'create', 'update', 'admin'],
+            'actions' => ['index', 'view', 'create', 'update', 'admin', 'upload'],
             'allow' => true,
             'roles' => ['admin'],
           ],

@@ -1,3 +1,5 @@
+/assets
+/_protected/runtime
 /_protected/config/db.php
 <<<<<<< HEAD
 # yii console command

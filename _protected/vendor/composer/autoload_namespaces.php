@@ -9,6 +9,8 @@ return array(
     'cebe\\gravatar\\' => array($vendorDir . '/cebe/yii2-gravatar'),
     'Imagine' => array($vendorDir . '/imagine/imagine/lib'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
+    'Gregwar\\Image' => array($vendorDir . '/gregwar/image'),
+    'Gregwar\\Cache' => array($vendorDir . '/gregwar/cache'),
     'Diff' => array($vendorDir . '/phpspec/php-diff/lib'),
     'Codeception\\' => array($vendorDir . '/codeception/specify/src'),
 );

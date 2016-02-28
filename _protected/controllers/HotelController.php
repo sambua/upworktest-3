@@ -2,10 +2,12 @@
 
 namespace app\controllers;
 
+use app\models\HotelMediaFile;
 use Yii;
 use app\models\Hotel;
 use app\models\search\HotelSearch;
 use app\components\AppController;
+use yii\base\Model;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -45,8 +47,7 @@ class HotelController extends AppController{
      * @param integer $id
      * @return mixed
      */
-    public function actionView($id)
-    {
+    public function actionView($id){
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -57,17 +58,16 @@ class HotelController extends AppController{
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
-    {
-        $model = new Hotel();
+    public function actionCreate(){
+      $model = new Hotel();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+      if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        return $this->redirect(['view', 'id' => $model->id]);
+      } else {
+        return $this->render('create', [
+          'model' => $model,
+        ]);
+      }
     }
 
     /**
@@ -76,9 +76,10 @@ class HotelController extends AppController{
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
-    {
+    public function actionUpdate($id){
         $model = $this->findModel($id);
+
+        //var_dump(Yii::$app->session->has('attachments')); die();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -117,4 +118,35 @@ class HotelController extends AppController{
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+  public function actionUpload(){
+    $model = new \app\models\Hotel();
+    Yii::$app->session->set('attachments', null);
+    Yii::$app->session->set('attachments', $model->uploadAttachment());
+    var_dump(Yii::$app->session->get('attachments')); die();
+  }
+
+  /**
+   * $folder name has  to be the same name as Model name
+   * @param $id
+   * @param string $folder
+   * @return mixed
+   */
+  public function actionDeleteImage($id){
+    $model = HotelMediaFile::findOne($id);
+
+    $filename = Yii::getAlias('@uploads')."/hotels/".$model->hotel_id."/".$model->name;
+
+    if(is_file($filename)) {
+      unlink ($filename);
+      if($model->delete()){
+        Yii::$app->getSession()->setFlash('alert', ['options'=>['class'=>'alert-success'],
+          'body'=>Yii::t('app', 'Image successfully was deleted')]);
+      } else {
+        Yii::$app->getSession()->setFlash('alert', ['options'=>['class'=>'alert-danger'],
+          'body'=>Yii::t('app', 'Some error occurred!')]);
+      }
+    }
+    return $this->redirect(Yii::$app->request->referrer);
+  }
 }

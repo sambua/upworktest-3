@@ -32,6 +32,17 @@ $this->params['breadcrumbs'][] = $this->title;
               'value'    => function($data){ return $data->status ? '<i class="fa fa-check-square" style="color:#5CB85C"></i>' : '<i class="fa fa-close" style="color: #A94442"></i>';},
               'filter'=> ['0' => 'Deactive' , '1' => 'Active'],
             ],
+            [
+              'label'   => 'Hotel Image',
+              'format'  => 'html',
+              'value'   => function($data){
+                if(!empty($file = $data->hotelDefaultImage)) $image = $file->name;
+                $id = $data->id ;
+                $out = empty($image) ? \Yii::getAlias('@uploadsUrl')."/no_image.png" : \Yii::getAlias('@uploadsUrl')."/hotels/".$id."/".$image ;
+                return Html::img($out, ['width' => '70px']);
+
+              },
+            ],
             'title',
             [
               'attribute' => 'updater_id',

@@ -3620,3 +3620,3393 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1456684609.2824
     'REQUEST_TIME' => 1456684609
 ]
+2016-02-28 23:24:19 [127.0.0.1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The view file does not exist: /private/var/www/uptest/_protected/views/layouts/_uploadAttachment.php in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, NULL)
+#1 /private/var/www/uptest/_protected/views/hotel/_form.php(38): yii\base\View->render('//layouts/_uplo...', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, NULL)
+#5 /private/var/www/uptest/_protected/views/hotel/update.php(18): yii\base\View->render('_form', Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\HotelController))
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('update', Array, Object(app\controllers\HotelController))
+#10 /private/var/www/uptest/_protected/controllers/HotelController.php(87): yii\base\Controller->render('update', Array)
+#11 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#16 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#18 {main}
+2016-02-28 23:24:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55095'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456687459.1119
+    'REQUEST_TIME' => 1456687459
+]
+2016-02-28 23:24:29 [127.0.0.1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The view file does not exist: /private/var/www/uptest/_protected/views/layouts/partials/_uploadAttachment.php in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, NULL)
+#1 /private/var/www/uptest/_protected/views/hotel/_form.php(38): yii\base\View->render('//layouts/parti...', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, NULL)
+#5 /private/var/www/uptest/_protected/views/hotel/update.php(18): yii\base\View->render('_form', Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\HotelController))
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('update', Array, Object(app\controllers\HotelController))
+#10 /private/var/www/uptest/_protected/controllers/HotelController.php(87): yii\base\Controller->render('update', Array)
+#11 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#16 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#18 {main}
+2016-02-28 23:24:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55095'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456687469.6715
+    'REQUEST_TIME' => 1456687469
+]
+2016-02-28 23:38:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: var_dump() expects at least 1 parameter, 0 given in /private/var/www/uptest/_protected/controllers/HotelController.php:80
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'var_dump() expe...', '/private/var/ww...', 80, Array)
+#1 /private/var/www/uptest/_protected/controllers/HotelController.php(80): var_dump()
+#2 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-02-28 23:38:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/view?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55468'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456688280.6312
+    'REQUEST_TIME' => 1456688280
+]
+2016-02-28 23:38:34 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: var_dump() expects at least 1 parameter, 0 given in /private/var/www/uptest/_protected/controllers/HotelController.php:80
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'var_dump() expe...', '/private/var/ww...', 80, Array)
+#1 /private/var/www/uptest/_protected/controllers/HotelController.php(80): var_dump()
+#2 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-02-28 23:38:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/view?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55468'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456688313.9804
+    'REQUEST_TIME' => 1456688313
+]
+2016-02-28 23:52:17 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: hotel/upload-attachment in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload-attachme...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/upload-at...', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-28 23:52:17 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'bnUybExidWg6MVQnAzMvPFtMSx8VOhY/O01QCCFWRgY3WEI8GAUWWQ=='
+]
+
+$_FILES = [
+    'Hotel' => [
+        'name' => [
+            'attachments' => [
+                0 => [
+                    0 => 'ausctr-omni-austin-hotel-downtown-evening-pool.jpg'
+                ]
+                1 => [
+                    1 => 'hotel-forum-roma_240920091414377028.jpg'
+                ]
+                2 => [
+                    2 => 'hotels.jpg'
+                ]
+                3 => [
+                    3 => 'jaxjax-omni-jacksonville-hotel-pool.jpg'
+                ]
+            ]
+        ]
+        'type' => [
+            'attachments' => [
+                0 => [
+                    0 => 'image/jpeg'
+                ]
+                1 => [
+                    1 => 'image/jpeg'
+                ]
+                2 => [
+                    2 => 'image/jpeg'
+                ]
+                3 => [
+                    3 => 'image/jpeg'
+                ]
+            ]
+        ]
+        'tmp_name' => [
+            'attachments' => [
+                0 => [
+                    0 => '/private/var/tmp/phpvcefWB'
+                ]
+                1 => [
+                    1 => '/private/var/tmp/php6vXDZK'
+                ]
+                2 => [
+                    2 => '/private/var/tmp/phpp1eAVg'
+                ]
+                3 => [
+                    3 => '/private/var/tmp/phpVstaRD'
+                ]
+            ]
+        ]
+        'error' => [
+            'attachments' => [
+                0 => [
+                    0 => 0
+                ]
+                1 => [
+                    1 => 0
+                ]
+                2 => [
+                    2 => 0
+                ]
+                3 => [
+                    3 => 0
+                ]
+            ]
+        ]
+        'size' => [
+            'attachments' => [
+                0 => [
+                    0 => 83600
+                ]
+                1 => [
+                    1 => 28351
+                ]
+                2 => [
+                    2 => 106251
+                ]
+                3 => [
+                    3 => 90288
+                ]
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryuaAgldqvwYSVAKEI'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '309416'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55604'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/upload-attachment'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '309416'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryuaAgldqvwYSVAKEI'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689137.376
+    'REQUEST_TIME' => 1456689137
+]
+2016-02-28 23:52:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: hotel/upload-attachment in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload-attachme...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/upload-at...', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-28 23:52:51 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'WlJMOWEtYmIOFipyLnw4Nm9rNUo4dQE1D2ouXQwZUQwDfzxpNUoBUw=='
+]
+
+$_FILES = [
+    'Hotel' => [
+        'name' => [
+            'attachments' => [
+                0 => [
+                    0 => 'ausctr-omni-austin-hotel-downtown-evening-pool.jpg'
+                ]
+                1 => [
+                    1 => 'hotel-forum-roma_240920091414377028.jpg'
+                ]
+                2 => [
+                    2 => 'hotels.jpg'
+                ]
+                3 => [
+                    3 => 'jaxjax-omni-jacksonville-hotel-pool.jpg'
+                ]
+            ]
+        ]
+        'type' => [
+            'attachments' => [
+                0 => [
+                    0 => 'image/jpeg'
+                ]
+                1 => [
+                    1 => 'image/jpeg'
+                ]
+                2 => [
+                    2 => 'image/jpeg'
+                ]
+                3 => [
+                    3 => 'image/jpeg'
+                ]
+            ]
+        ]
+        'tmp_name' => [
+            'attachments' => [
+                0 => [
+                    0 => '/private/var/tmp/phpbMkTH9'
+                ]
+                1 => [
+                    1 => '/private/var/tmp/phprt2DMm'
+                ]
+                2 => [
+                    2 => '/private/var/tmp/phpiI0V2X'
+                ]
+                3 => [
+                    3 => '/private/var/tmp/phpPDZZhq'
+                ]
+            ]
+        ]
+        'error' => [
+            'attachments' => [
+                0 => [
+                    0 => 0
+                ]
+                1 => [
+                    1 => 0
+                ]
+                2 => [
+                    2 => 0
+                ]
+                3 => [
+                    3 => 0
+                ]
+            ]
+        ]
+        'size' => [
+            'attachments' => [
+                0 => [
+                    0 => 83600
+                ]
+                1 => [
+                    1 => 28351
+                ]
+                2 => [
+                    2 => 106251
+                ]
+                3 => [
+                    3 => 90288
+                ]
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryPTGDmL3f6LlCeL5s'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '309416'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55605'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/upload-attachment'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '309416'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryPTGDmL3f6LlCeL5s'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689171.5936
+    'REQUEST_TIME' => 1456689171
+]
+2016-02-28 23:53:30 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/upload in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-28 23:53:30 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'ZmM4cDlHeHoyJ147dhYiLlNaQQNgHxstM1taFFRzSxQ/TkggbSAbSw=='
+]
+
+$_FILES = [
+    'Hotel' => [
+        'name' => [
+            'attachments' => [
+                0 => [
+                    0 => 'ausctr-omni-austin-hotel-downtown-evening-pool.jpg'
+                ]
+                1 => [
+                    1 => 'hotel-forum-roma_240920091414377028.jpg'
+                ]
+                2 => [
+                    2 => 'hotels.jpg'
+                ]
+                3 => [
+                    3 => 'jaxjax-omni-jacksonville-hotel-pool.jpg'
+                ]
+            ]
+        ]
+        'type' => [
+            'attachments' => [
+                0 => [
+                    0 => 'image/jpeg'
+                ]
+                1 => [
+                    1 => 'image/jpeg'
+                ]
+                2 => [
+                    2 => 'image/jpeg'
+                ]
+                3 => [
+                    3 => 'image/jpeg'
+                ]
+            ]
+        ]
+        'tmp_name' => [
+            'attachments' => [
+                0 => [
+                    0 => '/private/var/tmp/phpjSpKhd'
+                ]
+                1 => [
+                    1 => '/private/var/tmp/phpXLeAwm'
+                ]
+                2 => [
+                    2 => '/private/var/tmp/phpf0gaSJ'
+                ]
+                3 => [
+                    3 => '/private/var/tmp/phpcXZZ2z'
+                ]
+            ]
+        ]
+        'error' => [
+            'attachments' => [
+                0 => [
+                    0 => 0
+                ]
+                1 => [
+                    1 => 0
+                ]
+                2 => [
+                    2 => 0
+                ]
+                3 => [
+                    3 => 0
+                ]
+            ]
+        ]
+        'size' => [
+            'attachments' => [
+                0 => [
+                    0 => 83600
+                ]
+                1 => [
+                    1 => 28351
+                ]
+                2 => [
+                    2 => 106251
+                ]
+                3 => [
+                    3 => 90288
+                ]
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZT2we0Z6fwcpsJ1a'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '309416'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55604'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/upload'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '309416'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZT2we0Z6fwcpsJ1a'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689210.1182
+    'REQUEST_TIME' => 1456689210
+]
+2016-02-28 23:53:52 [127.0.0.1][-][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:2] yii\base\ErrorException: move_uploaded_file(/private/var/www/uptest/uploads/temp/6UshfbHL9VGow5LymROObdxlrA_r7d7W.jpg): failed to open stream: No such file or directory in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/UploadedFile.php:161
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/private/var/ww...', 161, Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/UploadedFile.php(161): move_uploaded_file('/private/var/tm...', '/private/var/ww...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(204): yii\web\UploadedFile->saveAs('/private/var/ww...')
+#3 /private/var/www/uptest/_protected/controllers/HotelController.php(123): app\models\Hotel->uploadAttachment()
+#4 [internal function]: app\controllers\HotelController->actionUpload()
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/upload', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#11 {main}
+2016-02-28 23:53:52 [127.0.0.1][-][jk2vabkjsriltoro83h15e5fc0][info][application] $_POST = [
+    '_csrf' => 'ZjVDWGctZTkycSUTKHw/bVMMOis.dQZuMw0hPAoZVlc/GDMIM0oGCA=='
+]
+
+$_FILES = [
+    'Hotel' => [
+        'name' => [
+            'attachments' => [
+                0 => [
+                    0 => 'ausctr-omni-austin-hotel-downtown-evening-pool.jpg'
+                ]
+                1 => [
+                    1 => 'hotel-forum-roma_240920091414377028.jpg'
+                ]
+                2 => [
+                    2 => 'hotels.jpg'
+                ]
+                3 => [
+                    3 => 'jaxjax-omni-jacksonville-hotel-pool.jpg'
+                ]
+            ]
+        ]
+        'type' => [
+            'attachments' => [
+                0 => [
+                    0 => 'image/jpeg'
+                ]
+                1 => [
+                    1 => 'image/jpeg'
+                ]
+                2 => [
+                    2 => 'image/jpeg'
+                ]
+                3 => [
+                    3 => 'image/jpeg'
+                ]
+            ]
+        ]
+        'tmp_name' => [
+            'attachments' => [
+                0 => [
+                    0 => '/private/var/tmp/phpYeQaCq'
+                ]
+                1 => [
+                    1 => '/private/var/tmp/phpeBOik0'
+                ]
+                2 => [
+                    2 => '/private/var/tmp/phpe6yNrG'
+                ]
+                3 => [
+                    3 => '/private/var/tmp/phpw9GoC2'
+                ]
+            ]
+        ]
+        'error' => [
+            'attachments' => [
+                0 => [
+                    0 => 0
+                ]
+                1 => [
+                    1 => 0
+                ]
+                2 => [
+                    2 => 0
+                ]
+                3 => [
+                    3 => 0
+                ]
+            ]
+        ]
+        'size' => [
+            'attachments' => [
+                0 => [
+                    0 => 83600
+                ]
+                1 => [
+                    1 => 28351
+                ]
+                2 => [
+                    2 => 106251
+                ]
+                3 => [
+                    3 => 90288
+                ]
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryXCTa1v9o2wQxihhG'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '309416'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55603'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/upload'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '309416'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryXCTa1v9o2wQxihhG'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689232.0791
+    'REQUEST_TIME' => 1456689232
+]
+2016-02-28 23:54:59 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\models\HotelMediaFile::default in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('default', 1)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(136): yii\db\BaseActiveRecord->__set('default', 1)
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-28 23:54:59 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55600'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689299.4167
+    'REQUEST_TIME' => 1456689299
+]
+2016-02-28 23:56:49 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\models\HotelMediaFile::property_id in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('property_id', 2)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(136): yii\db\BaseActiveRecord->__set('property_id', 2)
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-28 23:56:49 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55685'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689409.224
+    'REQUEST_TIME' => 1456689409
+]
+2016-02-28 23:57:09 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\models\HotelMediaFile::mime in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('mime', 'image/jpeg')
+#1 /private/var/www/uptest/_protected/models/Hotel.php(140): yii\db\BaseActiveRecord->__set('mime', 'image/jpeg')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-28 23:57:09 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55685'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689429.7536
+    'REQUEST_TIME' => 1456689429
+]
+2016-02-29 00:00:04 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\HotelMediaFile::file_name in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('file_name')
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/validators/Validator.php(240): yii\db\BaseActiveRecord->__get('file_name')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(app\models\HotelMediaFile), Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(421): yii\base\Model->validate(Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 /private/var/www/uptest/_protected/models/Hotel.php(143): yii\db\BaseActiveRecord->save()
+#6 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#10 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#11 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#16 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#18 {main}
+2016-02-29 00:00:04 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55699'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689604.7766
+    'REQUEST_TIME' => 1456689604
+]
+2016-02-29 00:01:08 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\models\HotelMediaFile::name in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(267): yii\base\Component->__set('name', 'OL5xKRxFIo0p3Ip...')
+#1 /private/var/www/uptest/_protected/models/Hotel.php(139): yii\db\BaseActiveRecord->__set('name', 'OL5xKRxFIo0p3Ip...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:01:07 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55699'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689667.9513
+    'REQUEST_TIME' => 1456689667
+]
+2016-02-29 00:01:46 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][Error] 'Error: Class \'gregwar\\image\\Image\' not found in /private/var/www/uptest/_protected/models/Hotel.php:160
+Stack trace:
+#0 /private/var/www/uptest/_protected/models/Hotel.php(121): app\\models\\Hotel->_saveAttachments(Array, \'hotels\', Object(app\\models\\HotelMediaFile), 800, 600)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\\models\\Hotel->afterSave(false, Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\\db\\BaseActiveRecord->updateInternal(NULL)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\\db\\ActiveRecord->update(true, NULL)
+#4 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\\db\\BaseActiveRecord->save()
+#5 [internal function]: app\\controllers\\HotelController->actionUpdate(\'2\')
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'update\', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'hotel/update\', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#11 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#12 {main}'
+2016-02-29 00:01:46 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55699'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689706.0981
+    'REQUEST_TIME' => 1456689706
+]
+2016-02-29 00:01:46 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-02-29 00:01:46 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55699'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689706.0981
+    'REQUEST_TIME' => 1456689706
+]
+2016-02-29 00:03:39 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:2] yii\base\ErrorException: rename(/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg,/private/var/www/uptest/uploads/hotels/2/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg): No such file or directory in /private/var/www/uptest/_protected/models/Hotel.php:157
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rename(/private...', '/private/var/ww...', 157, Array)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(157): rename('/private/var/ww...', '/private/var/ww...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:03:39 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'djVLS0Jmb2gicS0ADTc1PEMMMjgbPgw/Iw0pLy9SXAYvGDsbFgEMWQ=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/OL5xKRxFIo0p3IpdJheda76qcZArHYBD.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/W7ePnCYI-C9cd6jzbcn16K9suLr6uJ2J.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/AnUuk2bX7eT90ml9TokUF1msyE-6e0nH.jpg'
+        ]
+        3 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/QEBziQLl5yTP-ilAx2OSeYRh-BLPaOzv.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55733'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryEMACjfTLDSCUAVHs'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689819.3646
+    'REQUEST_TIME' => 1456689819
+]
+2016-02-29 00:04:21 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][Error] 'Error: Class \'gregwar\\image\\Image\' not found in /private/var/www/uptest/_protected/models/Hotel.php:160
+Stack trace:
+#0 /private/var/www/uptest/_protected/models/Hotel.php(121): app\\models\\Hotel->_saveAttachments(Array, \'hotels\', Object(app\\models\\HotelMediaFile), 800, 600)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\\models\\Hotel->afterSave(false, Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\\db\\BaseActiveRecord->updateInternal(NULL)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\\db\\ActiveRecord->update(true, NULL)
+#4 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\\db\\BaseActiveRecord->save()
+#5 [internal function]: app\\controllers\\HotelController->actionUpdate(\'2\')
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'update\', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'hotel/update\', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#11 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#12 {main}'
+2016-02-29 00:04:21 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'U3dETW95QkYHMyIGICgYEmZOPT42ISERBk8mKQJNcSgKWjQdOx4hdw=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+        ]
+        2 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55733'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689861.2223
+    'REQUEST_TIME' => 1456689861
+]
+2016-02-29 00:04:21 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-02-29 00:04:21 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'U3dETW95QkYHMyIGICgYEmZOPT42ISERBk8mKQJNcSgKWjQdOx4hdw=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+        ]
+        2 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55733'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456689861.2223
+    'REQUEST_TIME' => 1456689861
+]
+2016-02-29 00:07:14 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:2] yii\base\ErrorException: rename(/private/var/www/uptest/uploads/temp/pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg,/private/var/www/uptest/uploads/hotels/2/pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg): No such file or directory in /private/var/www/uptest/_protected/models/Hotel.php:157
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rename(/private...', '/private/var/ww...', 157, Array)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(157): rename('/private/var/ww...', '/private/var/ww...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(121): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:07:14 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'U3dETW95QkYHMyIGICgYEmZOPT42ISERBk8mKQJNcSgKWjQdOx4hdw=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/pxZ_95nxwFf2crRMeA0PvG-B84xhUZeB.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/R279FpWFbv7GLJc4o9JLDieGKiwIfRHm.jpg'
+        ]
+        2 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/e-cxnEK6GCCe_K-ziHGyUxfBNk1n-EOf.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55957'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysKeG4AG1RgyLBVBB'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690034.5682
+    'REQUEST_TIME' => 1456690034
+]
+2016-02-29 00:07:36 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][Error] 'Error: Class \'app\\models\\Image\' not found in /private/var/www/uptest/_protected/models/Hotel.php:164
+Stack trace:
+#0 /private/var/www/uptest/_protected/models/Hotel.php(121): app\\models\\Hotel->_saveAttachments(Array, \'hotels\', Object(app\\models\\HotelMediaFile), 800, 600)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\\models\\Hotel->afterSave(false, Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\\db\\BaseActiveRecord->updateInternal(NULL)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\\db\\ActiveRecord->update(true, NULL)
+#4 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\\db\\BaseActiveRecord->save()
+#5 [internal function]: app\\controllers\\HotelController->actionUpdate(\'2\')
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'update\', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'hotel/update\', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#11 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#12 {main}'
+2016-02-29 00:07:36 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'd1ZEaU5xNWkjEiIiASBvPUJvPRoXKVY.Im4mDSNFBgcuezQ5GhZWWA=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => '_500____college-hotelp1diapo1_718'
+            'extension' => 'jpg'
+            'name' => 'SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+            'type' => 'image/jpeg'
+            'size' => 301636
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+        ]
+        1 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => '-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+        ]
+        3 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+        ]
+        4 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55964'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690056.3397
+    'REQUEST_TIME' => 1456690056
+]
+2016-02-29 00:07:36 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-02-29 00:07:36 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'd1ZEaU5xNWkjEiIiASBvPUJvPRoXKVY.Im4mDSNFBgcuezQ5GhZWWA=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => '_500____college-hotelp1diapo1_718'
+            'extension' => 'jpg'
+            'name' => 'SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+            'type' => 'image/jpeg'
+            'size' => 301636
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+        ]
+        1 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => '-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+        ]
+        3 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+        ]
+        4 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55964'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690056.3397
+    'REQUEST_TIME' => 1456690056
+]
+2016-02-29 00:08:19 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:2] yii\base\ErrorException: rename(/private/var/www/uptest/uploads/temp/SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg,/private/var/www/uptest/uploads/hotels/2/SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg): No such file or directory in /private/var/www/uptest/_protected/models/Hotel.php:158
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rename(/private...', '/private/var/ww...', 158, Array)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(158): rename('/private/var/ww...', '/private/var/ww...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(122): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:08:19 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'd1ZEaU5xNWkjEiIiASBvPUJvPRoXKVY.Im4mDSNFBgcuezQ5GhZWWA=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => '_500____college-hotelp1diapo1_718'
+            'extension' => 'jpg'
+            'name' => 'SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+            'type' => 'image/jpeg'
+            'size' => 301636
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/SOXH70iDUM86pxoOz3QPglZo9BYL7nVL.jpg'
+        ]
+        1 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => '-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/-AqB7zUjHJaJhINlB8LxBUr2BXIIaSq_.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/niRCL_gzaKXi9-mKXQtuAbdZ7ENIsZZg.jpg'
+        ]
+        3 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/MuxPBqhZaJYIilfg9k9MEmWC8tPj8IuU.jpg'
+        ]
+        4 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/oUi4yrDwQ_h5YKYVlZYl8W7eXe4EVCVs.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55964'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4YHb25J80y0rb4KJ'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690099.5708
+    'REQUEST_TIME' => 1456690099
+]
+2016-02-29 00:08:27 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:8192] yii\base\ErrorException: Non-static method Imagine\Imagick\Image::thumbnail() should not be called statically in /private/var/www/uptest/_protected/models/Hotel.php:165
+Stack trace:
+#0 /private/var/www/uptest/_protected/models/Hotel.php(165): yii\base\ErrorHandler->handleError(8192, 'Non-static meth...', '/private/var/ww...', 165, Array)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(122): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#5 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-02-29 00:08:27 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'WERWQ3hFUEUMADAINxQKEW19LzAhHTMSDXw0JxVxYysBaSYTLCIzdA=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => '_500____college-hotelp1diapo1_718'
+            'extension' => 'jpg'
+            'name' => '9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg'
+            'type' => 'image/jpeg'
+            'size' => 301636
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg'
+        ]
+        1 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'CPaYd0-C_KvVJZbyxIKaJNkz2Amyi7gs.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/CPaYd0-C_KvVJZbyxIKaJNkz2Amyi7gs.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'zMtta7hrIHTlIEY1D-RhuIBFaeJB5I60.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/zMtta7hrIHTlIEY1D-RhuIBFaeJB5I60.jpg'
+        ]
+        3 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'YRLmp-xzhIPWtmNoLzqdQp_c4ZjHY71d.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/YRLmp-xzhIPWtmNoLzqdQp_c4ZjHY71d.jpg'
+        ]
+        4 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'lPAVY27wO1yVKyg75SLRx87o1p0Uj61a.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/lPAVY27wO1yVKyg75SLRx87o1p0Uj61a.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryIoVncoAC2wJ1QmdF'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55960'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryIoVncoAC2wJ1QmdF'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690107.1197
+    'REQUEST_TIME' => 1456690107
+]
+2016-02-29 00:10:11 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\base\ErrorException:2] yii\base\ErrorException: rename(/private/var/www/uptest/uploads/temp/9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg,/private/var/www/uptest/uploads/hotels/2/9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg): No such file or directory in /private/var/www/uptest/_protected/models/Hotel.php:158
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rename(/private...', '/private/var/ww...', 158, Array)
+#1 /private/var/www/uptest/_protected/models/Hotel.php(158): rename('/private/var/ww...', '/private/var/ww...')
+#2 /private/var/www/uptest/_protected/models/Hotel.php(122): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:10:10 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'WERWQ3hFUEUMADAINxQKEW19LzAhHTMSDXw0JxVxYysBaSYTLCIzdA=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => '_500____college-hotelp1diapo1_718'
+            'extension' => 'jpg'
+            'name' => '9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg'
+            'type' => 'image/jpeg'
+            'size' => 301636
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/9z38KLUFspHMeGLIWn_AZ4ybvQvaUXjh.jpg'
+        ]
+        1 => [
+            'base_name' => 'ausctr-omni-austin-hotel-downtown-evening-pool'
+            'extension' => 'jpg'
+            'name' => 'CPaYd0-C_KvVJZbyxIKaJNkz2Amyi7gs.jpg'
+            'type' => 'image/jpeg'
+            'size' => 83600
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/CPaYd0-C_KvVJZbyxIKaJNkz2Amyi7gs.jpg'
+        ]
+        2 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'zMtta7hrIHTlIEY1D-RhuIBFaeJB5I60.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/zMtta7hrIHTlIEY1D-RhuIBFaeJB5I60.jpg'
+        ]
+        3 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 'YRLmp-xzhIPWtmNoLzqdQp_c4ZjHY71d.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/YRLmp-xzhIPWtmNoLzqdQp_c4ZjHY71d.jpg'
+        ]
+        4 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'lPAVY27wO1yVKyg75SLRx87o1p0Uj61a.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/lPAVY27wO1yVKyg75SLRx87o1p0Uj61a.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryIoVncoAC2wJ1QmdF'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56005'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryIoVncoAC2wJ1QmdF'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690210.9633
+    'REQUEST_TIME' => 1456690210
+]
+2016-02-29 00:10:22 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][Imagine\Exception\OutOfBoundsException] Imagine\Exception\OutOfBoundsException: Cannot paste image of the given size at the specified position, as it moves outside of the current image's box in /private/var/www/uptest/_protected/vendor/imagine/imagine/lib/Imagine/Gd/Image.php:128
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-imagine/BaseImage.php(175): Imagine\Gd\Image->paste(Object(Imagine\Gd\Image), Object(Imagine\Image\Point))
+#1 /private/var/www/uptest/_protected/models/Hotel.php(165): yii\imagine\BaseImage::thumbnail('/private/var/ww...', 600, 337.5)
+#2 /private/var/www/uptest/_protected/models/Hotel.php(122): app\models\Hotel->_saveAttachments(Array, 'hotels', Object(app\models\HotelMediaFile), 800, 600)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(739): app\models\Hotel->afterSave(false, Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\db\BaseActiveRecord->updateInternal(NULL)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#6 /private/var/www/uptest/_protected/controllers/HotelController.php(82): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 00:10:22 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'M2RJQUJrWkJnIC8KDToAFgZdMDIbMzkVZlwrJS9faSxqSTkRFgw5cw=='
+    'Hotel' => [
+        'status' => '1'
+        'title' => 'Luxury Otel sun beach'
+        'amenity_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'description' => 'Ut enim ad minim veniam, quis nostrud exercitation. Cum ceteris in veneratione tui montes, nascetur mus. Pellentesque habitant morbi tristique senectus et netus. Fabio vel iudice vincam, sunt in culpa qui officia.
+Contra legem facit qui id facit quod lex prohibet. Nec dubitamus multa iter quae et nos invenerat. Idque Caesaris facere voluntate liceret: sese habere. Curabitur est gravida et libero vitae dictum.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quisque placerat facilisis egestas cillum dolore. Quis aute iure reprehenderit in voluptate velit esse.
+Gallia est omnis divisa in partes tres, quarum. Quisque ut dolor gravida, placerat libero vel, euismod. Magna pars studiorum, prodita quaerimus. Quid securi etiam tamquam eu fugiat nulla pariatur. Integer legentibus erat a ante historiarum dapibus. Salutantibus vitae elit libero, a pharetra augue.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => [
+        0 => [
+            'base_name' => 'hotel-forum-roma_240920091414377028'
+            'extension' => 'jpg'
+            'name' => 'IQrdTQ0pfOIAo_J5zddewiJaNCdO0eHF.jpg'
+            'type' => 'image/jpeg'
+            'size' => 28351
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/IQrdTQ0pfOIAo_J5zddewiJaNCdO0eHF.jpg'
+        ]
+        1 => [
+            'base_name' => 'hotels'
+            'extension' => 'jpg'
+            'name' => 's39n0fe7sjF3mDvcyJHNIYLfkK0L5y3E.jpg'
+            'type' => 'image/jpeg'
+            'size' => 106251
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/s39n0fe7sjF3mDvcyJHNIYLfkK0L5y3E.jpg'
+        ]
+        2 => [
+            'base_name' => 'jaxjax-omni-jacksonville-hotel-pool'
+            'extension' => 'jpg'
+            'name' => 'e0E-77qLC2fUIS2F_j4E7siAIixAOA4X.jpg'
+            'type' => 'image/jpeg'
+            'size' => 90288
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/e0E-77qLC2fUIS2F_j4E7siAIixAOA4X.jpg'
+        ]
+        3 => [
+            'base_name' => 'luxury-hotel-rooms-rome'
+            'extension' => 'jpg'
+            'name' => 'NcPH9Z5E6YJICaoJsKqrMqBMLnsWfiIu.jpg'
+            'type' => 'image/jpeg'
+            'size' => 95777
+            'error' => 0
+            'temp_storage' => '/private/var/www/uptest/uploads/temp/NcPH9Z5E6YJICaoJsKqrMqBMLnsWfiIu.jpg'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryOS2KOhQXVBPpRdHT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '1924'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56012'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1924'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryOS2KOhQXVBPpRdHT'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456690222.2442
+    'REQUEST_TIME' => 1456690222
+]
+2016-02-29 00:26:08 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Hotel::image in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('image')
+#1 /private/var/www/uptest/_protected/views/hotel/index.php(41): yii\db\BaseActiveRecord->__get('image')
+#2 [internal function]: yii\base\View->{closure}(Object(app\models\Hotel), 2, 0, Object(yii\grid\DataColumn))
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(190): call_user_func(Object(Closure), Object(app\models\Hotel), 2, 0, Object(yii\grid\DataColumn))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(app\models\Hotel), 2, 0)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Hotel), 2, 0)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/GridView.php(504): yii\grid\Column->renderDataCell(Object(app\models\Hotel), 2, 0)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/GridView.php(473): yii\grid\GridView->renderTableRow(Object(app\models\Hotel), 2, 0)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/grid/GridView.php(288): yii\widgets\BaseListView->run()
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Widget.php(98): yii\grid\GridView->run()
+#16 /private/var/www/uptest/_protected/views/hotel/index.php(23): yii\base\Widget::widget(Array)
+#17 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#18 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#19 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\HotelController))
+#20 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\HotelController))
+#21 /private/var/www/uptest/_protected/controllers/HotelController.php(39): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\HotelController->actionIndex()
+#23 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#24 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#25 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#26 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/index', Array)
+#27 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#29 {main}
+2016-02-29 00:26:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/view?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56221'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456691168.2823
+    'REQUEST_TIME' => 1456691168
+]
+2016-02-29 00:26:38 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "uploads/uploads/no_image.png". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/uploads...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:26:38 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56226'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/uploads/uploads/no_image.png'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456691198.3469
+    'REQUEST_TIME' => 1456691198
+]
+2016-02-29 00:36:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: id in /private/var/www/uptest/_protected/views/hotel/_form.php:49
+Stack trace:
+#0 /private/var/www/uptest/_protected/views/hotel/_form.php(49): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/private/var/ww...', 49, Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, NULL)
+#4 /private/var/www/uptest/_protected/views/hotel/update.php(18): yii\base\View->render('_form', Array)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\HotelController))
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('update', Array, Object(app\controllers\HotelController))
+#9 /private/var/www/uptest/_protected/controllers/HotelController.php(86): yii\base\Controller->render('update', Array)
+#10 [internal function]: app\controllers\HotelController->actionUpdate('2')
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('hotel/update', Array)
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#17 {main}
+2016-02-29 00:36:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56402'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/hotel/update?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456691797.4824
+    'REQUEST_TIME' => 1456691797
+]
+2016-02-29 00:48:53 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "uploads/hotels/2/x4Uipc8EZq_3YbHMru5QYIJSTVfG01PQ.jpg". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/hotels/...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:48:53 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sun, 28 Feb 2016 20:28:00 GMT'
+    'HTTP_IF_NONE_MATCH' => '\"56d35850-6ebf\"'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56591'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/uploads/hotels/2/x4Uipc8EZq_3YbHMru5QYIJSTVfG01PQ.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456692533.6682
+    'REQUEST_TIME' => 1456692533
+]
+2016-02-29 00:48:57 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "uploads/hotels/2/x4Uipc8EZq_3YbHMru5QYIJSTVfG01PQ.jpg". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/hotels/...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:48:57 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56591'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/uploads/hotels/2/x4Uipc8EZq_3YbHMru5QYIJSTVfG01PQ.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456692537.8735
+    'REQUEST_TIME' => 1456692537
+]
+2016-02-29 00:49:43 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "uploads/hotels/2/r98MPlEC50WvpM3vFaqhnSBVRP51l52B.jpg". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/hotels/...', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:49:43 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/hotel/update?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sun, 28 Feb 2016 20:49:36 GMT'
+    'HTTP_IF_NONE_MATCH' => '\"56d35d60-160b0\"'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56658'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/uploads/hotels/2/r98MPlEC50WvpM3vFaqhnSBVRP51l52B.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456692583.4017
+    'REQUEST_TIME' => 1456692583
+]
