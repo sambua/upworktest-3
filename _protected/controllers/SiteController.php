@@ -21,39 +21,37 @@ use Yii;
  * It is responsible for displaying static pages, logging users in and out,
  * sign up and account activation, and password reset.
  */
-class SiteController extends Controller
-{
+class SiteController extends Controller{
     /**
      * Returns a list of behaviors that this component should behave as.
      *
      * @return array
      */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
+    public function behaviors(){
+      return [
+        'access' => [
+          'class' => AccessControl::className(),
+          'only' => ['logout', 'signup'],
+          'rules' => [
+            [
+              'actions' => ['signup'],
+              'allow' => true,
+              'roles' => ['?'],
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
+            [
+              'actions' => ['logout'],
+              'allow' => true,
+              'roles' => ['@'],
             ],
-        ];
+          ],
+        ],
+        'verbs' => [
+          'class' => VerbFilter::className(),
+          'actions' => [
+            'logout' => ['post'],
+          ],
+        ],
+      ];
     }
 
     /**
@@ -61,17 +59,16 @@ class SiteController extends Controller
      *
      * @return array
      */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-        ];
+    public function actions(){
+      return [
+        'error' => [
+          'class' => 'yii\web\ErrorAction',
+        ],
+        'captcha' => [
+          'class' => 'yii\captcha\CaptchaAction',
+          'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+        ],
+      ];
     }
 
 //------------------------------------------------------------------------------------------------//
@@ -84,9 +81,8 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
-    {
-        return $this->render('index');
+    public function actionIndex(){
+      return $this->render('index');
     }
 
     /**
@@ -94,9 +90,8 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
-    {
-        return $this->render('about');
+    public function actionAbout(){
+      return $this->render('about');
     }
 
     /**
@@ -104,8 +99,7 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionContact()
-    {
+    public function actionContact(){
         $model = new ContactForm();
 
         if (!$model->load(Yii::$app->request->post()) || !$model->validate()) {
@@ -133,8 +127,7 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionLogin()
-    {
+    public function actionLogin(){
         // user is logged in, he doesn't need to login
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
@@ -175,11 +168,10 @@ class SiteController extends Controller
      *
      * @return \yii\web\Response
      */
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
+    public function actionLogout(){
+      Yii::$app->user->logout();
 
-        return $this->goHome();
+      return $this->goHome();
     }
 
 /*----------------*
@@ -191,23 +183,22 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionRequestPasswordReset()
-    {
-        $model = new PasswordResetRequestForm();
+    public function actionRequestPasswordReset(){
+      $model = new PasswordResetRequestForm();
 
-        if (!$model->load(Yii::$app->request->post()) || !$model->validate()) {
-            return $this->render('requestPasswordResetToken', ['model' => $model]);
-        }
+      if (!$model->load(Yii::$app->request->post()) || !$model->validate()) {
+        return $this->render('requestPasswordResetToken', ['model' => $model]);
+      }
 
-        if (!$model->sendEmail()) {
-            Yii::$app->session->setFlash('error', Yii::t('app', 
-                'Sorry, we are unable to reset password for email provided.'));
-            return $this->refresh();
-        }
+      if (!$model->sendEmail()) {
+          Yii::$app->session->setFlash('error', Yii::t('app',
+              'Sorry, we are unable to reset password for email provided.'));
+          return $this->refresh();
+      }
 
-        Yii::$app->session->setFlash('success', Yii::t('app', 'Check your email for further instructions.'));
+      Yii::$app->session->setFlash('success', Yii::t('app', 'Check your email for further instructions.'));
 
-        return $this->goHome();
+      return $this->goHome();
     }
 
     /**
@@ -218,8 +209,7 @@ class SiteController extends Controller
      *
      * @throws BadRequestHttpException
      */
-    public function actionResetPassword($token)
-    {
+    public function actionResetPassword($token){
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidParamException $e) {
@@ -248,8 +238,7 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionSignup()
-    {  
+    public function actionSignup(){
         // get setting value for 'Registration Needs Activation'
         $rna = Yii::$app->params['rna'];
 

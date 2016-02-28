@@ -11,14 +11,14 @@ return [
      *
      * If set to true, upon registration, users will have to activate their accounts using email account activation.
      */
-    'rna' => false,
+    'rna' => true,
 
     /**
      * Login With Email.
      *
      * If set to true, users will have to login using email/password combo.
      */
-    'lwe' => false, 
+    'lwe' => false,
 
     /**
      * Force Strong Password.
@@ -45,11 +45,11 @@ return [
      * Email used in contact form.
      * Users will send you emails to this address.
      */
-    'adminEmail' => 'admin@example.com', 
+    'adminEmail' => 'testupwork2016@gmail.com',
 
     /**
      * Email used in sign up form, when we are sending email with account activation link.
      * You will send emails to users from this address.
      */
-    'supportEmail' => 'support@example.com',
+    'supportEmail' => 'testupwork2016@gmail.com',
 ];

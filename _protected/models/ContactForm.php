@@ -7,8 +7,7 @@ use Yii;
 /**
  * ContactForm is the model behind the contact form.
  */
-class ContactForm extends Model
-{
+class ContactForm extends Model{
     public $name;
     public $email;
     public $subject;
@@ -20,13 +19,12 @@ class ContactForm extends Model
      *
      * @return array
      */
-    public function rules()
-    {
-        return [
-            [['name', 'email', 'subject', 'body', 'verifyCode'], 'required'],
-            ['email', 'email'],
-            ['verifyCode', 'captcha'],
-        ];
+    public function rules(){
+      return [
+        [['name', 'email', 'subject', 'body', 'verifyCode'], 'required'],
+        ['email', 'email'],
+        ['verifyCode', 'captcha'],
+      ];
     }
 
     /**
@@ -51,13 +49,12 @@ class ContactForm extends Model
      * @param  string $email The target email address.
      * @return bool          Whether the email was sent.
      */
-    public function sendEmail($email)
-    {
-        return Yii::$app->mailer->compose()
-                                ->setTo($email)
-                                ->setFrom([$this->email => $this->name])
-                                ->setSubject($this->subject)
-                                ->setTextBody($this->body)
-                                ->send();
+    public function sendEmail($email){
+      return Yii::$app->mailer->compose()
+                              ->setTo($email)
+                              ->setFrom([$this->email => $this->name])
+                              ->setSubject($this->subject)
+                              ->setTextBody($this->body)
+                              ->send();
     }
 }
