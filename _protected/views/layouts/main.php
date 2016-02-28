@@ -48,6 +48,11 @@ AppAsset::register($this);
         $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
         $menuItems[] = ['label' => Yii::t('app', 'Control Panel'), 'url' => ['/manager']];
     }
+
+    // display Users to memebers+ roles
+    if (Yii::$app->user->can('admin')){
+      $menuItems[] = ['label' => Yii::t('app', 'List of hotels'), 'url' => ['/user/hotels']];
+    }
     
     // display Logout to logged in users
     if (!Yii::$app->user->isGuest) {

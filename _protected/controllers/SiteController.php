@@ -11,9 +11,9 @@ use app\models\ContactForm;
 use yii\helpers\Html;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\models\Hotel;
 use Yii;
 
 /**
@@ -21,38 +21,7 @@ use Yii;
  * It is responsible for displaying static pages, logging users in and out,
  * sign up and account activation, and password reset.
  */
-class SiteController extends Controller{
-    /**
-     * Returns a list of behaviors that this component should behave as.
-     *
-     * @return array
-     */
-    public function behaviors(){
-      return [
-        'access' => [
-          'class' => AccessControl::className(),
-          'only' => ['logout', 'signup'],
-          'rules' => [
-            [
-              'actions' => ['signup'],
-              'allow' => true,
-              'roles' => ['?'],
-            ],
-            [
-              'actions' => ['logout'],
-              'allow' => true,
-              'roles' => ['@'],
-            ],
-          ],
-        ],
-        'verbs' => [
-          'class' => VerbFilter::className(),
-          'actions' => [
-            'logout' => ['post'],
-          ],
-        ],
-      ];
-    }
+class SiteController extends \app\components\AppController{
 
     /**
      * Declares external actions for the controller.
@@ -82,7 +51,16 @@ class SiteController extends Controller{
      * @return string
      */
     public function actionIndex(){
-      return $this->render('index');
+      $model = Hotel::find()->where(['status' => 1]);
+
+      if(\Yii::$app->user->isGuest){
+        $model = $model->limit(3);
+      }
+
+      return $this->render('index', [
+        'model' => $model->all()
+      ]);
+
     }
 
     /**
@@ -92,6 +70,27 @@ class SiteController extends Controller{
      */
     public function actionAbout(){
       return $this->render('about');
+    }
+
+    /**
+    * @return string
+    */
+    public function actionHotels(){
+      return $this->render('hotels',[
+        'model' => Hotel::find()->where(['status' => 1])->all()
+      ]);
+    }
+
+    public function actionSingleHotel($id){
+      $model = Hotel::find()->where(['id' => $id, 'status' => 1])->one();
+
+      if(!$model){
+        throw new NotFoundHttpException('The requested page does not exist.');
+      }
+
+      return $this->render('single-hotel', [
+        'model' => $model
+      ]);
     }
 
     /**

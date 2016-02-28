@@ -15,17 +15,6 @@ use yii\filters\VerbFilter;
 class AmenityController extends AppController{
   public $layout = "//manager/main";
 
-  public function behaviors(){
-    return [
-      'verbs' => [
-        'class' => VerbFilter::className(),
-        'actions' => [
-            'delete' => ['post'],
-        ],
-      ],
-    ];
-  }
-
     /**
      * Lists all Amenity models.
      * @return mixed

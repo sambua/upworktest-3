@@ -6,7 +6,7 @@
  * Time: 19:45
  */
 
-namespace app\components;
+namespace app\components\helpers;
 
 use yii\imagine\Image;
 

@@ -17,7 +17,7 @@
       [
         'options' => ['class' => 'sidebar-menu'],
         'items' => [
-          ['label' => 'Menu Yii2', 'options' => ['class' => 'Options']],
+          ['label' => 'Hotels', 'options' => ['class' => 'header']],
           ['label' => 'Hotels', 'icon' => 'fa fa-building', 'url' => ['/hotel/index']],
           ['label' => 'Amenity', 'icon' => 'fa fa-gear', 'url' => ['/amenity/index']],
 

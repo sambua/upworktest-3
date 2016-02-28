@@ -17,17 +17,6 @@ use yii\filters\VerbFilter;
 class HotelController extends AppController{
   public $layout = "//manager/main";
 
-  public function behaviors(){
-    return [
-      'verbs' => [
-        'class' => VerbFilter::className(),
-        'actions' => [
-            'delete' => ['post'],
-        ],
-      ],
-    ];
-  }
-
     /**
      * Lists all Hotel models.
      * @return mixed

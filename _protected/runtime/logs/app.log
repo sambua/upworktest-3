@@ -7010,3 +7010,1191 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1456692583.4017
     'REQUEST_TIME' => 1456692583
 ]
+2016-02-29 00:57:50 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/MANAGER in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('MANAGER', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/MANAGER', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:57:50 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56814'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/MANAGER'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693070.6046
+    'REQUEST_TIME' => 1456693070
+]
+2016-02-29 00:57:57 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "MANAGER/index". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('MANAGER/index', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:57:57 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56814'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/MANAGER/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693077.013
+    'REQUEST_TIME' => 1456693077
+]
+2016-02-29 00:58:30 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "MANAGER/index". in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('MANAGER/index', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-02-29 00:58:30 [127.0.0.1][1][jk2vabkjsriltoro83h15e5fc0][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'jk2vabkjsriltoro83h15e5fc0'
+    '_identity' => '7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"EGnyqopU2AwWTtFFjEuk57bYCZLZGkko\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'attachments' => null
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=jk2vabkjsriltoro83h15e5fc0; _identity=7b66e9eb9b596bfbaab93c9486d21ab9fd4917bb0e31a825dc913bbd535169f3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22EGnyqopU2AwWTtFFjEuk57bYCZLZGkko%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56814'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/MANAGER/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693110.4677
+    'REQUEST_TIME' => 1456693110
+]
+2016-02-29 01:03:19 [127.0.0.1][2][upk475vl4k8e2886j82t0n8ie1][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\User::username in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/uptest/_protected/views/site/index.php(19): yii\base\Component->__get('username')
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/controllers/SiteController.php(85): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-02-29 01:03:19 [127.0.0.1][2][upk475vl4k8e2886j82t0n8ie1][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo\",2592000]\";}'
+    'PHPSESSID' => 'upk475vl4k8e2886j82t0n8ie1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo%22%2C2592000%5D%22%3B%7D; PHPSESSID=upk475vl4k8e2886j82t0n8ie1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/login'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56879'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693399.1683
+    'REQUEST_TIME' => 1456693399
+]
+2016-02-29 01:13:07 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][error][Error] 'Error: Class \'app\\components\\Setup\' not found in /private/var/www/uptest/_protected/views/site/index.php:28
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\\base\\View->renderPhpFile(\'/private/var/ww...\', Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\\base\\View->renderFile(\'/private/var/ww...\', Array, Object(app\\controllers\\SiteController))
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\\base\\View->render(\'index\', Array, Object(app\\controllers\\SiteController))
+#4 /private/var/www/uptest/_protected/controllers/SiteController.php(92): yii\\base\\Controller->render(\'index\', Array)
+#5 [internal function]: app\\controllers\\SiteController->actionIndex()
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'\', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'\', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#11 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#12 {main}'
+2016-02-29 01:13:07 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56987'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693987.0247
+    'REQUEST_TIME' => 1456693987
+]
+2016-02-29 01:13:07 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-02-29 01:13:07 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56987'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456693987.0247
+    'REQUEST_TIME' => 1456693987
+]
+2016-02-29 01:13:56 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Hotel::body in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('body')
+#1 /private/var/www/uptest/_protected/views/site/index.php(28): yii\db\BaseActiveRecord->__get('body')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#6 /private/var/www/uptest/_protected/controllers/SiteController.php(92): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 01:13:56 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56987'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456694036.1523
+    'REQUEST_TIME' => 1456694036
+]
+2016-02-29 01:19:42 [127.0.0.1][-][-][error][Error] 'Error: Call to undefined function app\\controllers\\where() in /private/var/www/uptest/_protected/controllers/SiteController.php:108
+Stack trace:
+#0 [internal function]: app\\controllers\\SiteController->actionHotels()
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'hotels\', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'site/hotels\', Array)
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#6 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#7 {main}'
+2016-02-29 01:19:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57067'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/hotels'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456694382.2842
+    'REQUEST_TIME' => 1456694382
+]
+2016-02-29 01:19:42 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-02-29 01:19:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57067'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/hotels'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456694382.2842
+    'REQUEST_TIME' => 1456694382
+]
+2016-02-29 01:27:48 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Controller.php:92
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#6 {main}
+2016-02-29 01:27:48 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57151'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456694868.9663
+    'REQUEST_TIME' => 1456694868
+]
+2016-02-29 01:35:02 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Controller.php:92
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#6 {main}
+2016-02-29 01:35:02 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57201'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695302.5655
+    'REQUEST_TIME' => 1456695302
+]
+2016-02-29 01:35:53 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Hotel::hotelMediaFile in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('hotelMediaFile')
+#1 /private/var/www/uptest/_protected/views/site/single-hotel.php(13): yii\db\BaseActiveRecord->__get('hotelMediaFile')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('single-hotel', Array, Object(app\controllers\SiteController))
+#6 /private/var/www/uptest/_protected/controllers/SiteController.php(123): yii\base\Controller->render('single-hotel', Array)
+#7 [internal function]: app\controllers\SiteController->actionSingleHotel('2')
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#12 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-02-29 01:35:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57204'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695353.8629
+    'REQUEST_TIME' => 1456695353
+]
+2016-02-29 01:36:19 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: item in /private/var/www/uptest/_protected/views/site/single-hotel.php:14
+Stack trace:
+#0 /private/var/www/uptest/_protected/views/site/single-hotel.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/private/var/ww...', 14, Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('single-hotel', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/controllers/SiteController.php(123): yii\base\Controller->render('single-hotel', Array)
+#6 [internal function]: app\controllers\SiteController->actionSingleHotel('2')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-02-29 01:36:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57204'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695379.357
+    'REQUEST_TIME' => 1456695379
+]
+2016-02-29 01:36:41 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /private/var/www/uptest/_protected/views/site/single-hotel.php:16
+Stack trace:
+#0 /private/var/www/uptest/_protected/views/site/single-hotel.php(16): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/private/var/ww...', 16, Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('single-hotel', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/controllers/SiteController.php(123): yii\base\Controller->render('single-hotel', Array)
+#6 [internal function]: app\controllers\SiteController->actionSingleHotel('2')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-02-29 01:36:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57204'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695401.7199
+    'REQUEST_TIME' => 1456695401
+]
+2016-02-29 01:37:05 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: mdoel in /private/var/www/uptest/_protected/views/site/single-hotel.php:24
+Stack trace:
+#0 /private/var/www/uptest/_protected/views/site/single-hotel.php(24): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/private/var/ww...', 24, Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(app\controllers\SiteController))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('single-hotel', Array, Object(app\controllers\SiteController))
+#5 /private/var/www/uptest/_protected/controllers/SiteController.php(123): yii\base\Controller->render('single-hotel', Array)
+#6 [internal function]: app\controllers\SiteController->actionSingleHotel('2')
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('single-hotel', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/single-hot...', Array)
+#11 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-02-29 01:37:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57204'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/single-hotel?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695425.8268
+    'REQUEST_TIME' => 1456695425
+]
+2016-02-29 01:44:53 [127.0.0.1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: Login Required in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/User.php:431
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(149): yii\web\User->loginRequired()
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(126): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Controller.php(107): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#10 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#12 {main}
+2016-02-29 01:44:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/login'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/hotels'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57398'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456695893.8741
+    'REQUEST_TIME' => 1456695893
+]
+2016-02-29 01:47:05 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][error][ParseError] 'ParseError: syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /private/var/www/uptest/_protected/views/site/index.php:45
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\\base\\View->renderPhpFile(\'/private/var/ww...\', Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\\base\\View->renderFile(\'/private/var/ww...\', Array, Object(app\\controllers\\SiteController))
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(377): yii\\base\\View->render(\'index\', Array, Object(app\\controllers\\SiteController))
+#3 /private/var/www/uptest/_protected/controllers/SiteController.php(61): yii\\base\\Controller->render(\'index\', Array)
+#4 [internal function]: app\\controllers\\SiteController->actionIndex()
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\\base\\InlineAction->runWithParams(Array)
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\\base\\Controller->runAction(\'index\', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\\base\\Module->runAction(\'site/index\', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))
+#10 /private/var/www/uptest/index.php(12): yii\\base\\Application->run()
+#11 {main}'
+2016-02-29 01:47:05 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/captcha?v=56d36aa1133cf'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/about'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57398'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456696025.8305
+    'REQUEST_TIME' => 1456696025
+]
+2016-02-29 01:47:05 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php:58
+
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(58): serialize(Array)
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#2 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-02-29 01:47:05 [127.0.0.1][-][nv1qe1ljo7mmne3uk11vifb9d7][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'nv1qe1ljo7mmne3uk11vifb9d7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/captcha?v=56d36aa1133cf'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=nv1qe1ljo7mmne3uk11vifb9d7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/about'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57398'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456696025.8305
+    'REQUEST_TIME' => 1456696025
+]
+2016-02-29 01:47:59 [127.0.0.1][2][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(126): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Controller.php(107): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('contact', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#11 {main}
+2016-02-29 01:47:59 [127.0.0.1][2][-][info][application] $_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    '_identity' => '5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo\",2592000]\";}'
+    'PHPSESSID' => 'r122f177ltfvdom3mb3nhuvbv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/site/single-hotel?id=2'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; _identity=5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo%22%2C2592000%5D%22%3B%7D; PHPSESSID=r122f177ltfvdom3mb3nhuvbv7'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/site/single-hotel?id=2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57407'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456696079.0817
+    'REQUEST_TIME' => 1456696079
+]
+2016-02-29 01:48:17 [127.0.0.1][2][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/filters/AccessControl.php(126): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\captcha\CaptchaAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Controller.php(107): yii\base\Controller->beforeAction(Object(yii\captcha\CaptchaAction))
+#6 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\captcha\CaptchaAction))
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('captcha', Array)
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/captcha', Array)
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#11 {main}
+2016-02-29 01:48:17 [127.0.0.1][2][-][info][application] $_GET = [
+    'v' => '56d36b21a3157'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'r122f177ltfvdom3mb3nhuvbv7'
+    '_identity' => '5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'goaano'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/site/single-hotel?id=2'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=r122f177ltfvdom3mb3nhuvbv7; _identity=5c3f6d89e5900f1b8c7b780c2099a1b8f6820eed3a161adcd382eae7ddf422f9a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22NBJNBYQJxcK8TPUReSx-rf-hL8no4ymo%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://uptest.dev/contact'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57407'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/captcha?v=56d36b21a3157'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=56d36b21a3157'
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456696097.8109
+    'REQUEST_TIME' => 1456696097
+]

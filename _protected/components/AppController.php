@@ -44,14 +44,25 @@ class AppController extends Controller{
           ],
           [
             'controllers' => ['site'],
-            'actions' => ['hotels'],
+            'actions' => ['hotels', 'single-hotel'],
             'allow' => true,
             'roles' => ['member'],
           ],
           [
-            'controllers' => [],
-            'actions' => [],
-            'allow' => true
+            'controllers' => ['site'],
+            'actions' => ['index', 'about', 'contact'],
+            'allow' => true,
+            'roles' => ['?', '@'],
+          ],
+          [
+            'actions' => ['signup', 'login'],
+            'allow' => true,
+            'roles' => ['?'],
+          ],
+          [
+            'actions' => ['logout'],
+            'allow' => true,
+            'roles' => ['@'],
           ],
           [
             // other rules

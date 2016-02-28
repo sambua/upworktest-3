@@ -11,6 +11,8 @@ use Yii;
  * UserController implements the CRUD actions for User model.
  */
 class UserController extends \app\components\AppController{
+  public $layout = '//manager/main';
+
     /**
      * How many users we want to display per page.
      * @var int
@@ -22,8 +24,8 @@ class UserController extends \app\components\AppController{
      *
      * @return string
      */
-    public function actionIndex()
-    {
+    public function actionIndex(){
+      $this->layout = '//manager/main';
         $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $this->_pageSize);
 
