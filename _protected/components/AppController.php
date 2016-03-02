@@ -55,7 +55,7 @@ class AppController extends Controller{
             'roles' => ['?', '@'],
           ],
           [
-            'actions' => ['signup', 'login'],
+            'actions' => ['signup', 'login', 'request-password-reset'],
             'allow' => true,
             'roles' => ['?'],
           ],

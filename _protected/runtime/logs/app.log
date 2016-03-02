@@ -8198,3 +8198,87 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1456696097.8109
     'REQUEST_TIME' => 1456696097
 ]
+2016-02-29 02:08:20 [127.0.0.1][-][ihsv6nkum8r1mic8ar98ikles1][error][Swift_TransportException] Swift_TransportException: Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/answer/14257 n10sm21777223wjf.28 - gsmtp
+" in /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php:383
+Stack trace:
+#0 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(281): Swift_Transport_AbstractSmtpTransport->_assertResponseCode('535-5.7.8 Usern...', Array)
+#1 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(243): Swift_Transport_AbstractSmtpTransport->executeCommand('RSET\r\n', Array, Array)
+#2 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php(55): Swift_Transport_EsmtpTransport->executeCommand('RSET\r\n', Array)
+#3 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php(176): Swift_Transport_Esmtp_Auth_XOAuth2Authenticator->authenticate(Object(Swift_SmtpTransport), 'testupwork2016@...', 'ck3P9IfL3BXa')
+#4 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(307): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#5 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#6 /private/var/www/uptest/_protected/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#7 /private/var/www/uptest/_protected/vendor/yiisoft/yii2-swiftmailer/Mailer.php(146): Swift_Mailer->send(Object(Swift_Message))
+#8 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/mail/BaseMailer.php(260): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#9 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/mail/BaseMessage.php(48): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#10 /private/var/www/uptest/_protected/models/SignupForm.php(130): yii\mail\BaseMessage->send()
+#11 /private/var/www/uptest/_protected/controllers/SiteController.php(293): app\models\SignupForm->sendAccountActivationEmail(Object(app\models\User))
+#12 /private/var/www/uptest/_protected/controllers/SiteController.php(266): app\controllers\SiteController->signupWithActivation(Object(app\models\SignupForm), Object(app\models\User))
+#13 [internal function]: app\controllers\SiteController->actionSignup()
+#14 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 /private/var/www/uptest/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /private/var/www/uptest/index.php(12): yii\base\Application->run()
+#20 {main}
+2016-02-29 02:08:17 [127.0.0.1][-][ihsv6nkum8r1mic8ar98ikles1][info][application] $_POST = [
+    '_csrf' => 'cW95X0V4cXAlKx8UCikrJERWACwcIBInJFcbOyhMQh4oQgkPER8SQQ=='
+    'SignupForm' => [
+        'username' => 'sambua2'
+        'email' => 'rashad_az@hotmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1\";}'
+    'PHPSESSID' => 'ihsv6nkum8r1mic8ar98ikles1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/site/request-password-reset'
+]
+
+$_SERVER = [
+    'USER' => 'rashad'
+    'HOME' => '/Users/rashad'
+    'HTTP_COOKIE' => '_csrf=db1fbf9b5db4242716555af7e3852d89c3d8bb29d071b4f6d7d698f4e0354d0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TDfKOQZT59ysYXcWU8bdm43nY-pPTgc1%22%3B%7D; PHPSESSID=ihsv6nkum8r1mic8ar98ikles1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,az;q=0.6,ru;q=0.4,tr;q=0.2,it;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://uptest.dev/signup'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://uptest.dev'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '192'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'uptest.dev'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'uptest.dev'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58015'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/private/var/www/uptest'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '192'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => '/private/var/www/uptest/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1456697297.6913
+    'REQUEST_TIME' => 1456697297
+]
